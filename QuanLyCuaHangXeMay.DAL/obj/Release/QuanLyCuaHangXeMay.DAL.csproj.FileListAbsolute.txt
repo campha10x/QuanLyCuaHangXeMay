@@ -1,0 +1,7 @@
+D:\BAI TAP C# WINFORM\QuanLyCuaHangXeMay\QuanLyCuaHangXeMay.DAL\bin\Release\QuanLyCuaHangXeMay.DAL.dll
+D:\BAI TAP C# WINFORM\QuanLyCuaHangXeMay\QuanLyCuaHangXeMay.DAL\bin\Release\QuanLyCuaHangXeMay.DAL.pdb
+D:\BAI TAP C# WINFORM\QuanLyCuaHangXeMay\QuanLyCuaHangXeMay.DAL\bin\Release\QuanLyCuaHangXeMay.Entity.dll
+D:\BAI TAP C# WINFORM\QuanLyCuaHangXeMay\QuanLyCuaHangXeMay.DAL\bin\Release\QuanLyCuaHangXeMay.Entity.pdb
+D:\BAI TAP C# WINFORM\QuanLyCuaHangXeMay\QuanLyCuaHangXeMay.DAL\obj\Release\QuanLyCuaHangXeMay.DAL.csprojResolveAssemblyReference.cache
+D:\BAI TAP C# WINFORM\QuanLyCuaHangXeMay\QuanLyCuaHangXeMay.DAL\obj\Release\QuanLyCuaHangXeMay.DAL.dll
+D:\BAI TAP C# WINFORM\QuanLyCuaHangXeMay\QuanLyCuaHangXeMay.DAL\obj\Release\QuanLyCuaHangXeMay.DAL.pdb

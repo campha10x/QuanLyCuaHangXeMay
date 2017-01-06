@@ -1,0 +1,7 @@
+D:\BAI TAP C# WINFORM\QuanLyCuaHangXeMay\QuanLyCuaHangXeMay.DAL\bin\Debug\QuanLyCuaHangXeMay.DAL.dll
+D:\BAI TAP C# WINFORM\QuanLyCuaHangXeMay\QuanLyCuaHangXeMay.DAL\bin\Debug\QuanLyCuaHangXeMay.DAL.pdb
+D:\BAI TAP C# WINFORM\QuanLyCuaHangXeMay\QuanLyCuaHangXeMay.DAL\bin\Debug\QuanLyCuaHangXeMay.Entity.dll
+D:\BAI TAP C# WINFORM\QuanLyCuaHangXeMay\QuanLyCuaHangXeMay.DAL\bin\Debug\QuanLyCuaHangXeMay.Entity.pdb
+D:\BAI TAP C# WINFORM\QuanLyCuaHangXeMay\QuanLyCuaHangXeMay.DAL\obj\Debug\QuanLyCuaHangXeMay.DAL.csprojResolveAssemblyReference.cache
+D:\BAI TAP C# WINFORM\QuanLyCuaHangXeMay\QuanLyCuaHangXeMay.DAL\obj\Debug\QuanLyCuaHangXeMay.DAL.dll
+D:\BAI TAP C# WINFORM\QuanLyCuaHangXeMay\QuanLyCuaHangXeMay.DAL\obj\Debug\QuanLyCuaHangXeMay.DAL.pdb

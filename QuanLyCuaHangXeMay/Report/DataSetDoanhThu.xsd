@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetDoanhThu" targetNamespace="http://tempuri.org/DataSetDoanhThu.xsd" xmlns:mstns="http://tempuri.org/DataSetDoanhThu.xsd" xmlns="http://tempuri.org/DataSetDoanhThu.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" GeneratorFunctionsComponentClassName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" UserFunctionsComponentName="QueriesTableAdapter" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="QUANLYCUAHANGXEMAYConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="QUANLYCUAHANGXEMAYConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.QuanLyCuaHangXeMay.Properties.Settings.GlobalReference.Default.QUANLYCUAHANGXEMAYConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTable1TableAdapter" GeneratorDataComponentClassName="DataTable1TableAdapter" Name="DataTable1" UserDataComponentName="DataTable1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="QUANLYCUAHANGXEMAYConnectionString1 (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT DISTINCT ChiTietPhieuXuat.MaPhieuXuat,NgayXuat,Xe.MaXe,Xe.TenXe,ChiTietPhieuXuat.SLXuat AS Soluong,(ChiTietPhieuXuat.SLXuat*(ChiTietPhieuNhap.DonGiaNhap+(ChiTietPhieuNhap.Thue*0.01*ChiTietPhieuNhap.DonGiaNhap)))as GiaNhap,(ChiTietPhieuXuat.SLXuat*(DonGiaXuat+(ChiTietPhieuXuat.DonGiaXuat*ChiTietPhieuXuat.Thue*0.01))) as GiaBan,(ChiTietPhieuXuat.SLXuat*(DonGiaXuat+(ChiTietPhieuXuat.DonGiaXuat*ChiTietPhieuXuat.Thue*0.01))-(ChiTietPhieuXuat.SLXuat*(ChiTietPhieuNhap.DonGiaNhap+(ChiTietPhieuNhap.Thue*0.01*ChiTietPhieuNhap.DonGiaNhap))))as TienLai
+FROM dbo.ChiTietPhieuNhap,dbo.ChiTietPhieuXuat,dbo.PhieuXuat,dbo.PhieuNhap,Xe
+where ChiTietPhieuXuat.MaXe=ChiTietPhieuNhap.MaXe and ChiTietPhieuXuat.MaXe=Xe.MaXe</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="MaPhieuXuat" DataSetColumn="MaPhieuXuat" />
+              <Mapping SourceColumn="NgayXuat" DataSetColumn="NgayXuat" />
+              <Mapping SourceColumn="MaXe" DataSetColumn="MaXe" />
+              <Mapping SourceColumn="TenXe" DataSetColumn="TenXe" />
+              <Mapping SourceColumn="Soluong" DataSetColumn="Soluong" />
+              <Mapping SourceColumn="GiaNhap" DataSetColumn="GiaNhap" />
+              <Mapping SourceColumn="GiaBan" DataSetColumn="GiaBan" />
+              <Mapping SourceColumn="TienLai" DataSetColumn="TienLai" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetDoanhThu" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSetDoanhThu" msprop:Generator_UserDSName="DataSetDoanhThu">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowClassName="DataTable1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MaPhieuXuat" msprop:Generator_ColumnVarNameInTable="columnMaPhieuXuat" msprop:Generator_ColumnPropNameInRow="MaPhieuXuat" msprop:Generator_ColumnPropNameInTable="MaPhieuXuatColumn" msprop:Generator_UserColumnName="MaPhieuXuat">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NgayXuat" msprop:Generator_ColumnVarNameInTable="columnNgayXuat" msprop:Generator_ColumnPropNameInRow="NgayXuat" msprop:Generator_ColumnPropNameInTable="NgayXuatColumn" msprop:Generator_UserColumnName="NgayXuat" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="MaXe" msprop:Generator_ColumnVarNameInTable="columnMaXe" msprop:Generator_ColumnPropNameInRow="MaXe" msprop:Generator_ColumnPropNameInTable="MaXeColumn" msprop:Generator_UserColumnName="MaXe">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TenXe" msprop:Generator_ColumnVarNameInTable="columnTenXe" msprop:Generator_ColumnPropNameInRow="TenXe" msprop:Generator_ColumnPropNameInTable="TenXeColumn" msprop:Generator_UserColumnName="TenXe" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Soluong" msprop:Generator_ColumnVarNameInTable="columnSoluong" msprop:Generator_ColumnPropNameInRow="Soluong" msprop:Generator_ColumnPropNameInTable="SoluongColumn" msprop:Generator_UserColumnName="Soluong" type="xs:int" minOccurs="0" />
+              <xs:element name="GiaNhap" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnGiaNhap" msprop:Generator_ColumnPropNameInRow="GiaNhap" msprop:Generator_ColumnPropNameInTable="GiaNhapColumn" msprop:Generator_UserColumnName="GiaNhap" type="xs:decimal" minOccurs="0" />
+              <xs:element name="GiaBan" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnGiaBan" msprop:Generator_ColumnPropNameInRow="GiaBan" msprop:Generator_ColumnPropNameInTable="GiaBanColumn" msprop:Generator_UserColumnName="GiaBan" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TienLai" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnTienLai" msprop:Generator_ColumnPropNameInRow="TienLai" msprop:Generator_ColumnPropNameInTable="TienLaiColumn" msprop:Generator_UserColumnName="TienLai" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:DataTable1" />
+      <xs:field xpath="mstns:MaXe" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
